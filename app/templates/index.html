@@ -3,9 +3,15 @@
     <head>
         {% if title %}
         <title> {{ title }} - Microblog </title>
+        {% else %}
+        <title> Welcome to Microbloh!</title>
+        {%endif}
     </head>
     <body>
         {% if body %}
         <h1> Hello, {{user.username}}!</h1>
+        {% else %}
+        <h1> Hello, new user!</h1>
+        {%endif%}
     </body>
 </html>

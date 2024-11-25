@@ -13,8 +13,8 @@
         {% else %}
         <h1> Hello, new user! </h1>
         {% endif %}
+        <h1> Here are some recent posts:</h1>
         <ul>
-            <li>Recent Posts:</li>
             {% for post in posts %}
                 <li>{{ post.author.Username }} says: {{ post.body }}</li>
             {% endfor %}

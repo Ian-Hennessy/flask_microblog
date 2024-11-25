@@ -9,12 +9,4 @@ def index():
     posts = [
         {
             'author': {'Username': 'Ian'},
-            'body': 'first post'
-        },
-        {
-            'author': {'Username': 'John'},
-            'body': 'second post'
-        }
-    ]
-    print(posts)
-    return render_template('index.html', title="HOME", user=user, posts=posts)
+  

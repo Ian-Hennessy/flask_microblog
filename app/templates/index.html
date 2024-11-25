@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1> Hi, {{user.Username}}!</h1>
-        {% for post in posts}
+        {% for post in posts %}
         <div><p>{{ post.author.Username }} says: <b>{{ post.body }}</b></p></div>
         {% endfor %}
     </body>
